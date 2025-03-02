@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 35px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #d1ae6c;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.btn-2 { 
+    background-color: #363435 !important;
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+    padding: 10px 20px;
+    color: #fff !important;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-2:hover {
+    background-color: #d1ae6c !important;
+}
+
+.sign-in-section {
+    background: url('../img/sin.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #333 !important;
+    border-radius: 50px !important;
+}
+
+.card-body {
+    padding: 40px !important;
+}
+
+.logo-icon {
+    width: 90px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-body h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.card-body label {
+    color: #c28b23;
+}
+
+.form-control {
+    border-radius: 75px !important;
+    border-color: #ced4da;
+}
+
+.form-control:focus {
+    border-color: #5683de;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #01040b !important;
+    border-color: #01040b !important;
+    border-radius: 75px !important;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #466bb5;
+    border-color: #466bb5;
+}
+
+.text-center a {
+    color: #d1ae6c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.text-center a:hover {
+    color: #466bb5;
+}
+
+.sign-in-section .card {
+    border-radius: 75px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: lightgray;
+    padding: 2rem 0;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.footer .social-icons a:hover {
+    color: #0056b3;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.6s ease-out;
+}

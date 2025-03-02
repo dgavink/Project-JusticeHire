@@ -1,0 +1,344 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/serbg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 35px;
+}
+
+.navbar-nav .nav-link {
+    position: relative ;
+    display: inline-block ;             
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #d1ae6c;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.case-section {
+    padding: 30px 20px;
+    text-align: center;
+}
+.consult-section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.consult-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #333;
+    
+}
+
+.container img {
+    width: 100px;
+}
+
+.container-2 img {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+}
+
+
+.container-2 p {
+    text-align: justify;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 600px;
+
+}
+
+.container-2 span {
+    font-size: 3rem;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+
+table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+.lawyer-details {
+    margin-top: 2rem; /* Adjust spacing as needed */
+    width: 50%;
+    padding: 1.5rem;
+    border: 2px solid #d1ae6c; /* Light border color */
+    border-radius:30px; /* Rounded corners */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Subtle shadow */
+    background-color: transparent; /* Light background color */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.lawyer-details h5 {
+    color: #333; /* Primary color for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.lawyer-details p {
+    margin: 0.5rem 0; /* Spacing between paragraphs */
+}
+
+.lawyer-details p strong {
+    color: #343a40; /* Darker color for labels */
+}
+
+.lawyer-details p span {
+    color: #6c757d; /* Muted color for details */
+}
+
+/* Container Styling */
+.container-3 {
+    background-color: transparent;
+    padding: 30px 60px !important ;
+    border-radius: 30px;
+}
+
+/* Heading Styling */
+.container-3 h2 {
+    font-size: 28px;
+    color: #d1ae6c;
+    margin-bottom: 20px;
+}
+
+.container-4 {
+    width: 800px !important;
+    border: 2px solid #d1ae6c;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.container-4 h3 {
+    color: #d1ae6c;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container-2 h3 {
+    color: #d1ae6c;
+    text-align: center;
+}
+
+/* Form Row Styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Label Styling */
+.form-label {
+    flex-basis: 25%; /* Label takes 25% of the space */
+    font-weight: 600;
+    font-size: 16px;
+    color: #495057;
+    text-align: right; /* Align label text to the right */
+    margin-right: 10px;
+}
+
+.form-control{
+    height: 45px;
+    background: transparent !important;
+    border-radius: 30px !important;
+    border: 1px solid #d1ae6c !important;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.form-select {
+    flex-basis: 70%; /* Input/Select takes 70% of the space */
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #333 !important;
+    width: 100px;
+    border-color: #333 !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px !important;
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* Align button to the right */
+}
+
+.btn-primary:hover {
+    background-color: #d1ae6c !important;
+    border: #d1ae6c;
+}
+
+.btn-success {
+    background: #333 !important;
+    width: 100px;
+    border-radius: 30px !important;
+    border-color: #333!important;
+}
+.btn-success:hover {
+    background-color: #d1ae6c !important;
+    border: #d1ae6c !important;
+}
+
+.retrieve-appointment-section {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 40px 20px; /* Top/bottom and left/right padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.retrieve-appointment-section h3 {
+    color: #d1ae6c; /* Heading color */
+}
+
+.retrieve-appointment-section .form-label {
+    font-weight: bold; /* Bold labels */
+}
+
+.retrieve-appointment-section .btn-success {
+    background-color: white; /* Button color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+
+.appointment-details {
+    background-color: #e9ffe9; /* Light green background for appointment details */
+    border: 5px solid #d1ae6c !important;
+    border-radius: 30px; /* Rounded corners */
+    margin-top: 20px; /* Space above */
+}
+
+.appointment-details h4 {
+    color: #155724; /* Dark green color for details heading */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+.appointment-details p {
+    color: #333; /* Dark green color for details heading */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 2;
+}
+
+.footer {
+    background-color: lightgray;
+    padding: 2rem 0;;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #d1ae6c;
+}
+
+.footer .social-icons a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.showcard {
+    border: 1px solid #007bff; /* Bootstrap primary color */
+}
+.showcard-header {
+    background-color: #007bff;
+    color: white;
+
+}
+.btn-link {
+    color: #007bff;
+    text-decoration: underline;
+}
+.btn-link:hover {
+    text-decoration: none;
+    color: darkblue;
+}
+
